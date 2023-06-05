@@ -1,0 +1,521 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: whitesmoke;
+}
+
+#encabezado {
+    display: flex;
+    padding: 10px;
+    background-color: wheat;
+    justify-content: space-between;
+    flex-direction: column;
+}
+#encabezado .nombre h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 70px; 
+}
+
+#productos {
+    display: flex;
+    background-color: whitesmoke;
+    justify-content: center;
+    padding: 20px;
+}
+#productos .productosLanzamientos {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+}
+
+
+.productosPróximos h2 {
+    display: flex;
+    background-color: whitesmoke;
+    justify-content: center;
+    padding: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+}
+#Nuevos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 50px;
+    background-color: whitesmoke;
+}
+#Nuevos iframe {
+    width: 50%;
+}
+#Nuevos p {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    flex-direction: column;
+}
+
+div h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    background-color: whitesmoke;
+}
+
+.productosDestacados {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+    background-color: whitesmoke;
+    height: 350px;
+    list-style: none;
+}
+
+.productosDestacados .adidas {
+    list-style: none;
+}
+.productosDestacados .adidas p {
+    justify-self: center;
+    align-self: center;
+}
+.productosDestacados .nike {
+    list-style: none;
+}
+.productosDestacados .nike p {
+    justify-self: center;
+    align-self: center;
+}
+.productosDestacados .puma {
+    list-style: none;
+}
+.productosDestacados .puma p {
+    justify-self: center;
+    align-self: center;
+}
+
+.productosOferta {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+    background-color: whitesmoke;
+    height: 350px;
+    list-style: none;
+}
+
+.productosOferta .adidas {
+    list-style: none;
+}
+.productosOferta .adidas p {
+    justify-self: center;
+    align-self: center;
+}
+.productosOferta .nike {
+    list-style: none;
+}
+.productosOferta .nike p {
+    justify-self: center;
+    align-self: center;
+}
+.productosOferta .puma {
+    list-style: none;
+}
+.productosOferta .puma p {
+    justify-self: center;
+    align-self: center;
+}
+
+.newsletter {
+    display: flex;
+    background-color: whitesmoke;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 50px;
+}
+.newsletter h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+#pie {
+    display: flex;
+    background-color: wheat;
+    justify-content: space-around;
+    padding: 10px;
+    gap: 10px;
+    align-items: center;
+}
+
+#pie .pieLocales h4 {
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#pie .redes h4 {
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@media (min-width: 500px) and (max-width: 1200px) {
+    .productosOferta {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+    #pie {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+}
+
+
+/* adidas.html */
+
+#layout {
+    display: grid;
+    background-color: whitesmoke;
+    height: 100vh;
+    gap: 5px;
+    grid-template-areas: 
+        "fechas listado listado1 listado2 listado3"
+        "género listado listado1 listado2 listado3"
+        "talles listado listado1 listado2 listado3"
+        "colores listado listado1 listado2 listado3"
+        "footer footer footer footer footer";
+}
+
+#layout .opciones {
+    background-color: whitesmoke;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    grid-area: fechas;
+    align-items: flex-start;
+}
+#layout .género {
+    background-color: whitesmoke;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    grid-area: género;
+}
+
+#layout .talles {
+    background-color: whitesmoke;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    grid-area: talles;
+}
+#layout .talles .tabla {
+    background-color:  whitesmoke;
+    list-style: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    padding: 5px;
+    border-top-left-radius: 2px solid;
+    grid-area: tabla
+}
+#layout .colores {
+    background-color: whitesmoke;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    grid-area: colores;
+}
+#layout .colores .coloresTabla {
+    background-color: whitesmoke;
+    font-size: 25px;
+    grid-area: coloresTabla;
+}
+#layout .adidasPag ul .adidasListado {
+    background-color: whitesmoke;
+    grid-area: listado;
+    list-style: none;
+}
+#layout .adidasPag ul .adidasListado1 {
+    background-color: whitesmoke;
+    grid-area: listado1;
+    list-style: none;
+}
+#layout .adidasPag ul .adidasListado2 {
+    background-color: whitesmoke;
+    grid-area: listado2;
+    list-style: none;    
+}
+#layout .adidasPag ul .adidasListado3 {
+    background-color: whitesmoke;
+    grid-area: listado3;
+    list-style: none;
+}
+
+.foot {
+    display: flex;
+    background-color: wheat;
+    justify-content: end;
+    padding: 15px;
+    gap: 10px;
+    grid-area: footer;
+}
+
+
+/* nike.html */
+
+#layoutNike {
+    display: grid;
+    background-color: whitesmoke;
+    height: 100vh;
+    gap: 5px;
+    grid-template-areas: 
+        "fechas listado listado1 listado2 listado3"
+        "género listado listado1 listado2 listado3"
+        "talles listado listado1 listado2 listado3"
+        "colores listado listado1 listado2 listado3"
+        "footer footer footer footer footer";
+}
+
+#layoutNike .opciones {
+    background-color: whitesmoke;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    grid-area: fechas;
+    align-items: flex-start;
+}
+#layoutNike .género {
+    background-color: whitesmoke;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    grid-area: género;
+}
+
+#layoutNike .talles {
+    background-color: whitesmoke;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    grid-area: talles;
+    list-style: none;
+}
+#layoutNike .talles .tabla {
+    background-color:  whitesmoke;
+    list-style: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    padding: 5px;
+    border-top-left-radius: 2px solid;
+    grid-area: tabla
+}
+#layoutNike .colores {
+    background-color: whitesmoke;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    grid-area: colores;
+}
+#layoutNike .colores .coloresTabla {
+    background-color: whitesmoke;
+    font-size: 25px;
+    grid-area: coloresTabla;
+}
+#layout .nikePag ul .nikeListado {
+    background-color: whitesmoke;
+    grid-area: listado;
+    list-style: none;
+}
+#layout .nikePag ul .nikeListado1 {
+    background-color: whitesmoke;
+    grid-area: listado1;
+    list-style: none;
+}
+#layout .adidasPag ul .nikeListado2 {
+    background-color: whitesmoke;
+    grid-area: listado2;
+    list-style: none;    
+}
+#layout .nikePag ul .nikeListado3 {
+    background-color: whitesmoke;
+    grid-area: listado3;
+    list-style: none;
+}
+
+.foot {
+    display: flex;
+    background-color: wheat;
+    justify-content: end;
+    padding: 15px;
+    gap: 10px;
+    grid-area: footer;
+}
+
+
+/* puma.html */
+
+#layoutPuma {
+    display: grid;
+    background-color: whitesmoke;
+    height: 100vh;
+    gap: 5px;
+    grid-template-areas: 
+        "fechas listado listado1 listado2 listado3"
+        "género listado listado1 listado2 listado3"
+        "talles listado listado1 listado2 listado3"
+        "colores listado listado1 listado2 listado3"
+        "footer footer footer footer footer";
+}
+
+#layoutPuma .opciones {
+    background-color: whitesmoke;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    grid-area: fechas;
+    align-items: flex-start;
+}
+#layoutPuma .género {
+    background-color: whitesmoke;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    grid-area: género;
+}
+
+#layoutPuma .talles {
+    background-color: whitesmoke;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    grid-area: talles;
+    list-style: none;
+}
+#layoutPuma .talles .tabla {
+    background-color:  whitesmoke;
+    list-style: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    padding: 5px;
+    border-top-left-radius: 2px solid;
+    grid-area: tabla
+}
+#layoutPuma .colores {
+    background-color: whitesmoke;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    grid-area: colores;
+}
+#layoutPuma .colores .coloresTabla {
+    background-color: whitesmoke;
+    font-size: 25px;
+    grid-area: coloresTabla;
+}
+#layoutPuma .pumaPag ul .pumaListado {
+    background-color: whitesmoke;
+    grid-area: listado;
+    list-style: none;
+}
+#layoutPuma .pumaPag ul .pumaListado1 {
+    background-color: whitesmoke;
+    grid-area: listado1;
+    list-style: none;
+}
+#layoutPuma .pumaPag ul .pumaListado2 {
+    background-color: whitesmoke;
+    grid-area: listado2;
+    list-style: none;    
+}
+#layoutPuma .pumaPag ul .pumaListado3 {
+    background-color: whitesmoke;
+    grid-area: listado3;
+    list-style: none;
+}
+
+.foot {
+    display: flex;
+    background-color: wheat;
+    justify-content: end;
+    padding: 15px;
+    gap: 10px;
+    grid-area: footer;
+}
+
+
+/* contacto.html */
+
+.contacto {
+    display: grid;
+    background-color: whitesmoke;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    margin: auto;
+    justify-content: start;
+    justify-items: start;
+}
+.contacto .compañía {
+    background-color: whitesmoke;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+.contacto .compañíaHistoria {
+    background-color: whitesmoke;
+    margin-left: 100px;
+    margin-top: 40px;
+}
+.contacto p {
+    background-color: whitesmoke;
+    margin-left: 100px;
+    margin-top: 40px;
+}
+.contacto img { 
+    background-color: whitesmoke;
+    margin-left: 700px;
+    margin-top: 40px;
+}
+.contacto .texto p {
+    background-color: whitesmoke;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 100px;
+    margin-top: 40px;
+}
+.contacto .texto a {
+    background-color: whitesmoke;
+    margin-left: 100px;
+    margin-top: 40px;
+}
+.contacto .texto img {
+    background-color: whitesmoke;
+    margin-left: 500px;
+    margin-top: -223px;
+}
+
+.form {
+    display: grid;
+    justify-items: center;
+    background-color: whitesmoke;
+    padding: 50px;
+}
+.form .formTexto h3 {
+    background-color: whitesmoke;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+}
+.form .formTexto .formulario {
+    background-color: whitesmoke;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+    background-color: whitesmoke;
+}
+.info .ayuda {
+    background-color: whitesmoke;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.info .ayudaTexto p i {
+    background-color: whitesmoke;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.locales {
+    background-color: whitesmoke;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.locales iframe {
+    background-color: whitesmoke;
+}
+.locales p {
+    background-color: whitesmoke;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.foot {
+    display: flex;
+    background-color: wheat;
+    justify-content: end;
+    padding: 15px;
+    gap: 10px;
+}
