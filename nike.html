@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Venta de zapatillas">
+    <meta name="keywords" content="ZAPATILLAS, NIKE, JORDAN, GR, EDICIONES LIMITADAS, COLLABS">
     <title>Nike | SNKRS LOVE</title>
     <link rel="shortcut icon" href="./img-html/logo.jpg" type="image/x-icon">
     <link rel="stylesheet" href="./CSS/style.css">
@@ -16,7 +17,6 @@
 <body>
     
     <header id="encabezado">
-
         <div>
           <img src="./img-html/logo.jpg" alt="Logo" width="90px;">
         </div>
@@ -25,7 +25,7 @@
            <h1>SNKRS LOVE</h1>
         </div>
   
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg bg-light">
           <div class="container-fluid">
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -52,19 +52,18 @@
             </div>
           </div>
         </nav>
-  
     </header>
 
     <section id="layoutNike">
-        <nav class="opciones">
+        <div class="opciones">
             <label for="">Ordenar por</label>
             <select name="" id=""> 
             <option value="arg">Precio más bajo</option>
             <option value="chi" selected>Precio más alto</option>
             <option value="per">Lanzamiento</option>
             </select>
-        </nav>
-        <nav class="género">
+        </div>
+        <div class="género">
             <h4>GÉNERO</h4>
             <ul>
                 <li>
@@ -74,11 +73,10 @@
                     <input type="radio" name="género" id="no"> Unisex
                 </li>
             </ul>
-        </nav>
+        </div>
         <div class="talles">
             <h4>TALLES</h4>
-           
-            <ul>
+            <ul class="tabla">
                 <li>
                     <label for="talle"></label>
                     <input type="radio" name="talle" id="si"> 34.5
@@ -136,175 +134,165 @@
         </div>
         <div class="colores">
             <h4>COLORES</h4>  
-            <table class="coloresTabla" border="1">
-                <tr>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    </tr>
-                <tr>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                </tr>
-            </table>
+            <ul class="coloresTabla">
+                <li>
+                    <label for="color"></label>
+                    <input type="checkbox" name="color" id="si"> NEGRO
+                </li>
+                <li>
+                    <label for="color"></label>
+                    <input type="checkbox" name="color" id="no"> BLANCO
+                </li>
+                <li>
+                    <label for="color"></label>
+                    <input type="checkbox" name="color" id="no"> GRIS
+                </li>
+                <li>
+                    <label for="color"></label>
+                    <input type="checkbox" name="color" id="no"> ROJO
+                </li>
+                <li>
+                    <label for="color"></label>
+                    <input type="checkbox" name="color" id="no"> AZUL
+                </li>
+                <li>
+                    <label for="color"></label>
+                    <input type="checkbox" name="color" id="si"> VERDE
+                </li>
+                <li>
+                    <label for="color"></label>
+                    <input type="checkbox" name="color" id="no"> BEIGE
+                </li>
+                <li>
+                    <label for="color"></label>
+                    <input type="checkbox" name="color" id="no"> MARRÓN
+                </li>
+            </ul>
         </div>
     
-        <section class="nikePag">
-            <nav>
-                <ul>
-                    <li class="nikeListado">
-                        <img src="./img-html/ni_airforce.JPG" alt="zapatillas Nike" width="250 px;">
-                        <p>$00000</p>
-                        <input type="submit" value="COMPRAR"></input>
-                    </li>
-                </ul>
-            </nav>
-            <nav>
-                <ul>
-                    <li class="nikeListado">
-                        <img src="./img-html/ni_airforce.JPG" alt="zapatillas Nike" width="250 px;">
-                        <p>$00000</p>
-                        <input type="submit" value="COMPRAR"></input>
-                    </li>
-                </ul>
-            </nav>
-            <nav>
-                <ul>
-                    <li class="nikeListado">
-                        <img src="./img-html/ni_airforce.JPG" alt="zapatillas Nike" width="250 px;">
-                        <p>$00000</p>
-                        <input type="submit" value="COMPRAR"></input>
-                    </li>
-                </ul>
-            </nav>
-            <nav>
-                <ul>
-                    <li class="nikeListado">
-                        <img src="./img-html/ni_airforce.JPG" alt="zapatillas Nike" width="250 px;">
-                        <p>$00000</p>
-                        <input type="submit" value="COMPRAR"></input>
-                    </li>
-                </ul>
-            </nav>
-        </section>
+        <div class="nikePag">
+            <ul>
+                <li class="nikeListado">
+                    <img src="./img-html/ni_airforce.JPG" alt="zapatillas Nike" width="250 px;">
+                    <p><b>$59999</b></p>
+                    <input type="submit" value="COMPRAR"></input>
+                </li>
+            </ul>
+            <ul>
+                <li class="nikeListado">
+                    <img src="./img-html/ni_huaracheblackred.JPG" alt="zapatillas Nike" width="250 px;">
+                    <p><b>$55999</b></p>
+                    <input type="submit" value="COMPRAR"></input>
+                </li>
+            </ul>
+            <ul>
+                <li class="nikeListado">
+                    <img src="./img-html/ni_airmax95black.JPG" alt="zapatillas Nike" width="250 px;">
+                    <p><b>$81999</b></p>
+                    <input type="submit" value="COMPRAR"></input>
+                </li>
+            </ul>
+            <ul>
+                <li class="nikeListado">
+                    <img src="./img-html/ni_jordan4bluegrey.JPG" alt="zapatillas Nike" width="250 px;">
+                    <p><b>$114999</b></p>
+                    <input type="submit" value="COMPRAR"></input>
+                </li>
+            </ul>    
+        </div>
     
-        <section class="nikePag">
-            <nav>
-                <ul>
-                    <li class="nikeListado1">
-                        <img src="./img-html/ni_airforce.JPG" alt="zapatillas Nike" width="250 px;">
-                        <p>$00000</p>
-                        <input type="submit" value="COMPRAR"></input>
-                    </li>
-                </ul>
-            </nav>
-            <nav>
-                <ul>
-                    <li class="nikeListado1">
-                        <img src="./img-html/ni_airforce.JPG" alt="zapatillas Nike" width="250 px;">
-                        <p>$00000</p>
-                        <input type="submit" value="COMPRAR"></input>
-                    </li>
-                </ul>
-            </nav>
-            <nav>
-                <ul>
-                    <li class="nikeListado1">
-                        <img src="./img-html/ni_airforce.JPG" alt="zapatillas Nike" width="250 px;">
-                        <p>$00000</p>
-                        <input type="submit" value="COMPRAR"></input>
-                    </li>
-                </ul>
-            </nav>
-            <nav>
-                <ul>
-                    <li class="nikeListado1">
-                        <img src="./img-html/ni_airforce.JPG" alt="zapatillas Nike" width="250 px;">
-                        <p>$00000</p>
-                        <input type="submit" value="COMPRAR"></input>
-                    </li>
-                </ul>
-            </nav>
-        </section>
+        <div class="nikePag1">
+            <ul>
+                <li class="nikeListado1">
+                    <img src="./img-html/ni_jordan1blackred.JPG" alt="zapatillas Nike" width="250 px;">
+                    <p><b>$69999</b></p>
+                    <input type="submit" value="COMPRAR"></input>
+                </li>
+            </ul> 
+            <ul>
+                <li class="nikeListado1">
+                    <img src="./img-html/ni_wafflecraterbg.JPG" alt="zapatillas Nike" width="250 px;">
+                    <p><s>$42999</s> <b>$26999</b></p>
+                    <input type="submit" value="COMPRAR"></input>
+                </li>
+            </ul>
+            <ul>
+                <li class="nikeListado1">
+                    <img src="./img-html/ni_airmax97blackgrey.JPG" alt="zapatillas Nike" width="250 px;">
+                    <p><b>$82999</b></p>
+                    <input type="submit" value="COMPRAR"></input>
+                </li>
+            </ul>
+            <ul>
+                <li class="nikeListado1">
+                    <img src="./img-html/ni_huaracheblackviolet.JPG" alt="zapatillas Nike" width="250 px;">
+                    <p><b>$55999</b></p>
+                    <input type="submit" value="COMPRAR"></input>
+                </li>
+            </ul>
+        </div>
     
-        <section class="nikePag">
-            <nav>
-                <ul>
-                    <li class="nikeListado2">
-                        <img src="./img-html/ni_airforce.JPG" alt="zapatillas Nike" width="250 px;">
-                        <p>$00000</p>
-                        <input type="submit" value="COMPRAR"></input>
-                    </li>
-                </ul>
-            </nav>
-            <nav>
-                <ul>
-                    <li class="nikeListado2">
-                        <img src="./img-html/ni_airforce.JPG" alt="zapatillas Nike" width="250 px;">
-                        <p>$00000</p>
-                        <input type="submit" value="COMPRAR"></input>
-                    </li>
-                </ul>
-            </nav>
-            <nav>
-                <ul>
-                    <li class="nikeListado2">
-                        <img src="./img-html/ni_airforce.JPG" alt="zapatillas Nike" width="250 px;">
-                        <p>$00000</p>
-                        <input type="submit" value="COMPRAR"></input>
-                    </li>
-                </ul>
-            </nav>
-            <nav>
-                <ul>
-                    <li class="nikeListado2">
-                        <img src="./img-html/ni_airforce.JPG" alt="zapatillas Nike" width="250 px;">
-                        <p>$00000</p>
-                        <input type="submit" value="COMPRAR"></input>
-                    </li>
-                </ul>
-            </nav>
-        </section>
+        <div class="nikePag2">
+            <ul>
+                <li class="nikeListado2">
+                    <img src="./img-html/ni_airforcesafari.JPG" alt="zapatillas Nike" width="250 px;">
+                    <p><b>$64999</b></p>
+                    <input type="submit" value="COMPRAR"></input>
+                </li>
+            </ul>
+            <ul>
+                <li class="nikeListado2">
+                    <img src="./img-html/ni_jordan5black.JPG" alt="zapatillas Nike" width="250 px;">
+                    <p><b>$126999</b></p>
+                    <input type="submit" value="COMPRAR"></input>
+                </li>
+            </ul>
+            <ul>
+                <li class="nikeListado2">
+                    <img src="./img-html/ni_prestoblackwhite.JPG" alt="zapatillas Nike" width="250 px;">
+                    <p><b>$63999</b></p>
+                    <input type="submit" value="COMPRAR"></input>
+                </li>
+            </ul>
+            <ul>
+                <li class="nikeListado2">
+                    <img src="./img-html/ni_airmax97se.JPG" alt="zapatillas Nike" width="250 px;">
+                    <p><b>$89999</b></p>
+                    <input type="submit" value="COMPRAR"></input>
+                </li>
+            </ul>
+        </div>
     
-        <section class="nikePag">
-            <nav>
-                <ul>
-                    <li class="nikeListado3">
-                        <img src="./img-html/ni_airforce.JPG" alt="zapatillas Nike" width="250 px;">
-                        <p>$00000</p>
-                        <input type="submit" value="COMPRAR"></input>
-                    </li>
-                </ul>
-            </nav>
-            <nav>
-                <ul>
-                    <li class="nikeListado3">
-                        <img src="./img-html/ni_airforce.JPG" alt="zapatillas Nike" width="250 px;">
-                        <p>$00000</p>
-                        <input type="submit" value="COMPRAR"></input>
-                    </li>
-                </ul>
-            </nav>
-            <nav>
-                <ul>
-                    <li class="nikeListado3">
-                        <img src="./img-html/ni_airforce.JPG" alt="zapatillas Nike" width="250 px;">
-                        <p>$00000</p>
-                        <input type="submit" value="COMPRAR"></input>
-                    </li>
-                </ul>
-            </nav>
-            <nav>
-                <ul>
-                    <li class="nikeListado3">
-                        <img src="./img-html/ni_airforce.JPG" alt="zapatillas Nike" width="250 px;">
-                        <p>$00000</p>
-                        <input type="submit" value="COMPRAR"></input>
-                    </li>
-                </ul>
-            </nav>
-        </section>
+        <div class="nikePag3">
+            <ul>
+                <li class="nikeListado3">
+                    <img src="./img-html/ni_airforcereact.JPG" alt="zapatillas Nike" width="250 px;">
+                    <p><b>$82999</b></p>
+                    <input type="submit" value="COMPRAR"></input>
+                </li>
+            </ul>
+            <ul>
+                <li class="nikeListado3">
+                    <img src="./img-html/ni_airmax90premium.JPG" alt="zapatillas Nike" width="250 px;">
+                    <p><b>$65999</b></p>
+                    <input type="submit" value="COMPRAR"></input>
+                </li>
+            </ul>
+            <ul>
+                <li class="nikeListado3">
+                    <img src="./img-html/ni_jordan11blue.JPG" alt="zapatillas Nike" width="250 px;">
+                    <p><b>$119999</b></p>
+                    <input type="submit" value="COMPRAR"></input>
+                </li>
+            </ul>
+            <ul>
+                <li class="nikeListado3">
+                    <img src="./img-html/ni_waffletrainer.JPG" alt="zapatillas Nike" width="250 px;">
+                    <p><b>$42999</b></p>
+                    <input type="submit" value="COMPRAR"></input>
+                </li>
+            </ul>
+        </div>
     
         <footer class="foot">
             <img src="./img-html/logo.jpg" alt="Logo" width="90px;">

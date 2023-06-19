@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Venta de zapatillas">
+    <meta name="keywords" content="ZAPATILLAS, ADIDAS, GR, EDICIONES LIMITADAS, COLLABS">
     <title>Adidas | SNKRS LOVE</title>
     <link rel="shortcut icon" href="./img-html/logo.jpg" type="image/x-icon">
     <link rel="stylesheet" href="./CSS/style.css">
@@ -16,7 +17,6 @@
 <body>
     
     <header id="encabezado">
-
         <div>
           <img src="./img-html/logo.jpg" alt="Logo" width="90px;">
         </div>
@@ -25,7 +25,7 @@
            <h1>SNKRS LOVE</h1>
         </div>
   
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg bg-light">
           <div class="container-fluid">
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -52,35 +52,31 @@
             </div>
           </div>
         </nav>
-  
     </header>
   
-
     <section id="layout">
-
-        <nav class="opciones">
+        <div class="opciones">
             <label for="">Ordenar por</label>
             <select name="" id=""> 
             <option value="arg">Precio más bajo</option>
             <option value="chi" selected>Precio más alto</option>
             <option value="per">Lanzamiento</option>
             </select>
-        </nav>
-        <nav class="género">
+        </div>
+        <div class="género">
             <h4>GÉNERO</h4>
-            <ul>
-                <li>
-                    <label for="género"></label>
-                    <input type="radio" name="género" id="si"> Mujer
-                    <input type="radio" name="género" id="no"> Hombre
-                    <input type="radio" name="género" id="no"> Unisex
-                </li>
-            </ul>
-        </nav>
+                <ul>
+                    <li>
+                        <label for="género"></label>
+                        <input type="radio" name="género" id="si"> Mujer
+                        <input type="radio" name="género" id="no"> Hombre
+                        <input type="radio" name="género" id="no"> Unisex
+                    </li>
+                </ul>
+        </div>
         <div class="talles">
             <h4>TALLES</h4>
-           
-            <ul>
+            <ul class="tabla">
                 <li>
                     <label for="talle"></label>
                     <input type="radio" name="talle" id="si"> 34.5
@@ -138,174 +134,164 @@
         </div>
         <div class="colores">
             <h4>COLORES</h4>  
-            <table class="coloresTabla" border="1">
-                <tr>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    </tr>
-                <tr>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                </tr>
-            </table>
+            <ul class="coloresTabla">
+                <li>
+                    <label for="color"></label>
+                    <input type="checkbox" name="color" id="si"> NEGRO
+                </li>
+                <li>
+                    <label for="color"></label>
+                    <input type="checkbox" name="color" id="no"> BLANCO
+                </li>
+                <li>
+                    <label for="color"></label>
+                    <input type="checkbox" name="color" id="no"> GRIS
+                </li>
+                <li>
+                    <label for="color"></label>
+                    <input type="checkbox" name="color" id="no"> ROJO
+                </li>
+                <li>
+                    <label for="color"></label>
+                    <input type="checkbox" name="color" id="no"> AZUL
+                </li>
+                <li>
+                    <label for="color"></label>
+                    <input type="checkbox" name="color" id="si"> VERDE
+                </li>
+                <li>
+                    <label for="color"></label>
+                    <input type="checkbox" name="color" id="no"> BEIGE
+                </li>
+                <li>
+                    <label for="color"></label>
+                    <input type="checkbox" name="color" id="no"> MARRÓN
+                </li>
+            </ul>
         </div>
         
     <section class="adidasPag">
-        <nav>
-            <ul>
-                <li class="adidasListado">
-                    <img src="./img-html/ad_superstar.JPG" alt="zapatillas Adidas" width="250 px;">
-                    <p>$00000</p>
-                    <input type="submit" value="COMPRAR"></input>
-                </li>
-            </ul>
-        </nav>
-        <nav>
-            <ul>
-                <li class="adidasListado">
-                    <img src="./img-html/ad_superstar.JPG" alt="zapatillas Adidas" width="250 px;">
-                    <p>$00000</p>
-                    <input type="submit" value="COMPRAR"></input>
-                </li>
-            </ul>
-        </nav>
-        <nav>
-            <ul>
-                <li class="adidasListado">
-                    <img src="./img-html/ad_superstar.JPG" alt="zapatillas Adidas" width="250 px;">
-                    <p>$00000</p>
-                    <input type="submit" value="COMPRAR"></input>
-                </li>
-            </ul>
-        </nav>
-        <nav>
-            <ul>
-                <li class="adidasListado">
-                    <img src="./img-html/ad_superstar.JPG" alt="zapatillas Adidas" width="250 px;">
-                    <p>$00000</p>
-                    <input type="submit" value="COMPRAR"></input>
-                </li>
-            </ul>
-        </nav>
+        <ul>
+            <li class="adidasListado">
+                <img src="./img-html/ad_superstar.JPG" alt="zapatillas Adidas" width="250 px;">
+                <p><b>$42999</b></p>
+                <input type="submit" value="COMPRAR"></input>
+            </li>
+        </ul> 
+        <ul>
+            <li class="adidasListado">
+                <img src="./img-html/ad_forumlowwhiteblue.JPG" alt="zapatillas Adidas" width="250 px;">
+                <p><b>$45999</b></p>
+                <input type="submit" value="COMPRAR"></input>
+            </li>
+        </ul>
+        <ul>
+            <li class="adidasListado">
+                <img src="./img-html/ad_nmdv3black.JPG" alt="zapatillas Adidas" width="250 px;">
+                <p><b>$57999</b></p>
+                <input type="submit" value="COMPRAR"></input>
+            </li>
+        </ul>
+        <ul>
+            <li class="adidasListado">
+                <img src="./img-html/ad_ozeliaweat.JPG" alt="zapatillas Adidas" width="250 px;">
+                <p><b>$37999</b></p>
+                <input type="submit" value="COMPRAR"></input>
+            </li>
+        </ul>
     </section>
 
-    <section class="adidasPag">
-        <nav>
-            <ul>
-                <li class="adidasListado1">
-                    <img src="./img-html/ad_superstar.JPG" alt="zapatillas Adidas" width="250 px;">
-                    <p>$00000</p>
-                    <input type="submit" value="COMPRAR"></input>
-                </li>
-            </ul>
-        </nav>
-        <nav>
-            <ul>
-                <li class="adidasListado1">
-                    <img src="./img-html/ad_superstar.JPG" alt="zapatillas Adidas" width="250 px;">
-                    <p>$00000</p>
-                    <input type="submit" value="COMPRAR"></input>
-                </li>
-            </ul>
-        </nav>
-        <nav>
-            <ul>
-                <li class="adidasListado1">
-                    <img src="./img-html/ad_superstar.JPG" alt="zapatillas Adidas" width="250 px;">
-                    <p>$00000</p>
-                    <input type="submit" value="COMPRAR"></input>
-                </li>
-            </ul>
-        </nav>
-        <nav>
-            <ul>
-                <li class="adidasListado1">
-                    <img src="./img-html/ad_superstar.JPG" alt="zapatillas Adidas" width="250 px;">
-                    <p>$00000</p>
-                    <input type="submit" value="COMPRAR"></input>
-                </li>
-            </ul>
-        </nav>
+    <section class="adidasPag1">
+        <ul>
+            <li class="adidasListado1">
+                <img src="./img-html/ad_hyperturfblue.JPG" alt="zapatillas Adidas" width="250 px;">
+                <p><s>$54999</s> <b>$29999</b></p>
+                <input type="submit" value="COMPRAR"></input>
+            </li>
+        </ul>
+        <ul>
+            <li class="adidasListado1">
+                <img src="./img-html/ad_ozweegogreen.JPG" alt="zapatillas Adidas" width="250 px;">
+                <p><b>$68999</b></p>
+                <input type="submit" value="COMPRAR"></input>
+            </li>
+        </ul>
+        <ul>
+            <li class="adidasListado1">
+                <img src="./img-html/ad_ultraboostdnawhite.JPG" alt="zapatillas Adidas" width="250 px;">
+                <p><b>$63999</b></p>
+                <input type="submit" value="COMPRAR"></input>
+            </li>
+        </ul>
+        <ul>
+            <li class="adidasListado1">
+                <img src="./img-html/ad_stansmithwb.JPG" alt="zapatillas Adidas" width="250 px;">
+                <p><b>$32999</b></p>
+                <input type="submit" value="COMPRAR"></input>
+            </li>
+        </ul>
     </section>
 
-    <section class="adidasPag">
-        <nav>
-            <ul>
-                <li class="adidasListado2">
-                    <img src="./img-html/ad_superstar.JPG" alt="zapatillas Adidas" width="250 px;">
-                    <p>$00000</p>
-                    <input type="submit" value="COMPRAR"></input>
-                </li>
-            </ul>
-        </nav>
-        <nav>
-            <ul>
-                <li class="adidasListado2">
-                    <img src="./img-html/ad_superstar.JPG" alt="zapatillas Adidas" width="250 px;">
-                    <p>$00000</p>
-                    <input type="submit" value="COMPRAR"></input>
-                </li>
-            </ul>
-        </nav>
-        <nav>
-            <ul>
-                <li class="adidasListado2">
-                    <img src="./img-html/ad_superstar.JPG" alt="zapatillas Adidas" width="250 px;">
-                    <p>$00000</p>
-                    <input type="submit" value="COMPRAR"></input>
-                </li>
-            </ul>
-        </nav>
-        <nav>
-            <ul>
-                <li class="adidasListado2">
-                    <img src="./img-html/ad_superstar.JPG" alt="zapatillas Adidas" width="250 px;">
-                    <p>$00000</p>
-                    <input type="submit" value="COMPRAR"></input>
-                </li>
-            </ul>
-        </nav> 
+    <section class="adidasPag2">
+        <ul>
+            <li class="adidasListado2">
+                <img src="./img-html/ad_superstarwhite.JPG" alt="zapatillas Adidas" width="250 px;">
+                <p><b>$42999</b></p>
+                <input type="submit" value="COMPRAR"></input>
+            </li>
+        </ul>
+        <ul>
+            <li class="adidasListado2">
+                <img src="./img-html/ad_ultraboostdnablack.JPG" alt="zapatillas Adidas" width="250 px;">
+                <p><b>$63999</b></p>
+                <input type="submit" value="COMPRAR"></input>
+            </li>
+        </ul>
+        <ul>
+            <li class="adidasListado2">
+                <img src="./img-html/ad_ozweegobrown.JPG" alt="zapatillas Adidas" width="250 px;">
+                <p><b>$68999</b></p>
+                <input type="submit" value="COMPRAR"></input>
+            </li>
+        </ul>
+        <ul>
+            <li class="adidasListado2">
+                <img src="./img-html/ad_forumlowgum.JPG" alt="zapatillas Adidas" width="250 px;">
+                <p><b>$64999</b></p>
+                <input type="submit" value="COMPRAR"></input>
+            </li>
+        </ul>
     </section>
 
-    <section class="adidasPag">
-        <nav>
-            <ul>
-                <li class="adidasListado3">
-                    <img src="./img-html/ad_superstar.JPG" alt="zapatillas Adidas" width="250 px;">
-                    <p>$00000</p>
-                    <input type="submit" value="COMPRAR"></input>
-                </li>
-            </ul>
-        </nav>
-        <nav>
-            <ul>
-                <li class="adidasListado3">
-                    <img src="./img-html/ad_superstar.JPG" alt="zapatillas Adidas" width="250 px;">
-                    <p>$00000</p>
-                    <input type="submit" value="COMPRAR"></input>
-                </li>
-            </ul>
-        </nav>
-        <nav>
-            <ul>
-                <li class="adidasListado3">
-                    <img src="./img-html/ad_superstar.JPG" alt="zapatillas Adidas" width="250 px;">
-                    <p>$00000</p>
-                    <input type="submit" value="COMPRAR"></input>
-                </li>
-            </ul>
-        </nav>
-        <nav>
-            <ul>
-                <li class="adidasListado3">
-                    <img src="./img-html/ad_superstar.JPG" alt="zapatillas Adidas" width="250 px;">
-                    <p>$00000</p>
-                    <input type="submit" value="COMPRAR"></input>
-                </li>
-            </ul>
-        </nav>
+    <section class="adidasPag3">
+        <ul>
+            <li class="adidasListado3">
+                <img src="./img-html/ad_forumlowexhibit.JPG" alt="zapatillas Adidas" width="250 px;">
+                <p><b>$61999</b></p>
+                <input type="submit" value="COMPRAR"></input>
+            </li>
+        </ul>
+        <ul>
+            <li class="adidasListado3">
+                <img src="./img-html/ad_nmdv3white.JPG" alt="zapatillas Adidas" width="250 px;">
+                <p><b>$57999</b></p>
+                <input type="submit" value="COMPRAR"></input>
+            </li>
+        </ul>
+        <ul>
+            <li class="adidasListado3">
+                <img src="./img-html/ad_forummidwhite.JPG" alt="zapatillas Adidas" width="250 px;">
+                <p><b>$45999</b></p>
+                <input type="submit" value="COMPRAR"></input>
+            </li>
+        </ul>
+        <ul>
+            <li class="adidasListado3">
+                <img src="./img-html/ad_nizzacamo.JPG" alt="zapatillas Adidas" width="250 px;">
+                <p><b>$36999</b></p>
+                <input type="submit" value="COMPRAR"></input>
+            </li>
+        </ul>
     </section>
 
     <footer class="foot">

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Venta de zapatillas">
+    <meta name="keywords" content="ZAPATILLAS, PUMA, GR, EDICIONES LIMITADAS, COLLABS">
     <title>Puma | SNKRS LOVE</title>
     <link rel="shortcut icon" href="./img-html/logo.jpg" type="image/x-icon">
     <link rel="stylesheet" href="./CSS/style.css">
@@ -16,7 +17,6 @@
 <body>
     
     <header id="encabezado">
-
         <div>
           <img src="./img-html/logo.jpg" alt="Logo" width="90px;">
         </div>
@@ -25,7 +25,7 @@
            <h1>SNKRS LOVE</h1>
         </div>
   
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg bg-light">
           <div class="container-fluid">
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -52,7 +52,6 @@
             </div>
           </div>
         </nav>
-  
     </header>
 
     <section id="layoutPuma">
@@ -78,8 +77,7 @@
         </nav>
         <div class="talles">
             <h4>TALLES</h4>
-           
-            <ul>
+            <ul class="tabla">
                 <li>
                     <label for="talle"></label>
                     <input type="radio" name="talle" id="si"> 34.5
@@ -137,181 +135,170 @@
         </div>
         <div class="colores">
             <h4>COLORES</h4>  
-            <table class="coloresTabla" border="1">
-                <tr>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                    </tr>
-                <tr>
-                    <td>X</td>
-                    <td>X</td>
-                    <td>X</td>
-                </tr>
-            </table>
+            <ul class="coloresTabla">
+                <li>
+                    <label for="color"></label>
+                    <input type="checkbox" name="color" id="si"> NEGRO
+                </li>
+                <li>
+                    <label for="color"></label>
+                    <input type="checkbox" name="color" id="no"> BLANCO
+                </li>
+                <li>
+                    <label for="color"></label>
+                    <input type="checkbox" name="color" id="no"> GRIS
+                </li>
+                <li>
+                    <label for="color"></label>
+                    <input type="checkbox" name="color" id="no"> ROJO
+                </li>
+                <li>
+                    <label for="color"></label>
+                    <input type="checkbox" name="color" id="no"> AZUL
+                </li>
+                <li>
+                    <label for="color"></label>
+                    <input type="checkbox" name="color" id="si"> VERDE
+                </li>
+                <li>
+                    <label for="color"></label>
+                    <input type="checkbox" name="color" id="no"> BEIGE
+                </li>
+                <li>
+                    <label for="color"></label>
+                    <input type="checkbox" name="color" id="no"> MARRÓN
+                </li>
+            </ul>
         </div>
     
        <section class="pumaPag">
-            <nav>
-                <ul>
-                    <li class="pumaListado">
-                        <img src="./img-html/pu_suede.JPG" alt="zapatillas Puma" width="250 px;">
-                        <p>$00000</p>
-                        <input type="submit" value="COMPRAR"></input>
-                    </li>
-                </ul>
-            </nav>
-            <nav>
-                <ul>
-                    <li class="pumaListado">
-                        <img src="./img-html/pu_suede.JPG" alt="zapatillas Puma" width="250 px;">
-                        <p>$00000</p>
-                        <input type="submit" value="COMPRAR"></input>
-                    </li>
-                </ul>
-            </nav>
-            <nav>
-                <ul>
-                    <li class="pumaListado">
-                        <img src="./img-html/pu_suede.JPG" alt="zapatillas Puma" width="250 px;">
-                        <p>$00000</p>
-                        <input type="submit" value="COMPRAR"></input>
-                    </li>
-                </ul>
-            </nav>
-            <nav>
-                <ul>
-                    <li class="pumaListado">
-                        <img src="./img-html/pu_suede.JPG" alt="zapatillas Puma" width="250 px;">
-                        <p>$00000</p>
-                        <input type="submit" value="COMPRAR"></input>
-                    </li>
-                </ul>
-            </nav>
+            <ul>
+                <li class="pumaListado">
+                    <img src="./img-html/pu_suedegrey.JPG" alt="zapatillas Puma" width="250 px;">
+                    <p><b>$32999</b></p>
+                    <input type="submit" value="COMPRAR"></input>
+                </li>
+            </ul>
+            <ul>
+                <li class="pumaListado">
+                    <img src="./img-html/pu_riderfwhitered.JPG" alt="zapatillas Puma" width="250 px;">
+                    <p><b>$39999</b></p>
+                    <input type="submit" value="COMPRAR"></input>
+                </li>
+            </ul>
+            <ul>
+                <li class="pumaListado">
+                    <img src="./img-html/pu_slipstreambwhigh.JPG" alt="zapatillas Puma" width="250 px;">
+                    <p><b>$52999</b></p>
+                    <input type="submit" value="COMPRAR"></input>
+                </li>
+            </ul>
+            <ul>
+                <li class="pumaListado">
+                    <img src="./img-html/pu_riderfvgreen.JPG" alt="zapatillas Puma" width="250 px;">
+                    <p><b>$35999</b></p>
+                    <input type="submit" value="COMPRAR"></input>
+                </li>
+            </ul>   
        </section> 
         
-       <section class="pumaPag">
-            <nav>
-                <ul>
-                    <li class="pumaListado1">
-                        <img src="./img-html/pu_suede.JPG" alt="zapatillas Puma" width="250 px;">
-                        <p>$00000</p>
-                        <input type="submit" value="COMPRAR"></input>
-                    </li>
-                </ul>
-            </nav>
-            <nav>
-                <ul>
-                    <li class="pumaListado1">
-                        <img src="./img-html/pu_suede.JPG" alt="zapatillas Puma" width="250 px;">
-                        <p>$00000</p>
-                        <input type="submit" value="COMPRAR"></input>
-                    </li>
-                </ul>
-            </nav>
-            <nav>
-                <ul>
-                    <li class="pumaListado1">
-                        <img src="./img-html/pu_suede.JPG" alt="zapatillas Puma" width="250 px;">
-                        <p>$00000</p>
-                        <input type="submit" value="COMPRAR"></input>
-                    </li>
-                </ul>
-            </nav>
-            <nav>
-                <ul>
-                    <li class="pumaListado1">
-                        <img src="./img-html/pu_suede.JPG" alt="zapatillas Puma" width="250 px;">
-                        <p>$00000</p>
-                        <input type="submit" value="COMPRAR"></input>
-                    </li>
-                </ul>
-            </nav>
+       <section class="pumaPag1">
+            <ul>
+                <li class="pumaListado1">
+                    <img src="./img-html/pu_suede.JPG" alt="zapatillas Puma" width="250 px;">
+                    <p><b>$32999</b></p>
+                    <input type="submit" value="COMPRAR"></input>
+                </li>
+            </ul>
+            <ul>
+                <li class="pumaListado1">
+                    <img src="./img-html/pu_riderfvblackgreen.JPG" alt="zapatillas Puma" width="250 px;">
+                    <p><b>$41999</b></p>
+                    <input type="submit" value="COMPRAR"></input>
+                </li>
+            </ul>
+            <ul>
+                <li class="pumaListado1">
+                    <img src="./img-html/pu_rsxblack.JPG" alt="zapatillas Puma" width="250 px;">
+                    <p><b>$39999</b></p>
+                    <input type="submit" value="COMPRAR"></input>
+                </li>
+            </ul>
+            <ul>
+                <li class="pumaListado1">
+                    <img src="./img-html/pu_slipstreambw.JPG" alt="zapatillas Puma" width="250 px;">
+                    <p><s>$45999</s> <b>$34999</b></p>
+                    <input type="submit" value="COMPRAR"></input>
+                </li>
+            </ul>    
         </section> 
     
-        <section class="pumaPag">
-            <nav>
-                <ul>
-                    <li class="pumaListado2">
-                        <img src="./img-html/pu_suede.JPG" alt="zapatillas Puma" width="250 px;">
-                        <p>$00000</p>
-                        <input type="submit" value="COMPRAR"></input>
-                    </li>
-                </ul>
-            </nav>
-            <nav>
-                <ul>
-                    <li class="pumaListado2">
-                        <img src="./img-html/pu_suede.JPG" alt="zapatillas Puma" width="250 px;">
-                        <p>$00000</p>
-                        <input type="submit" value="COMPRAR"></input>
-                    </li>
-                </ul>
-            </nav>
-            <nav>
-                <ul>
-                    <li class="pumaListado2">
-                        <img src="./img-html/pu_suede.JPG" alt="zapatillas Puma" width="250 px;">
-                        <p>$00000</p>
-                        <input type="submit" value="COMPRAR"></input>
-                    </li>
-                </ul>
-            </nav>
-            <nav>
-                <ul>
-                    <li class="pumaListado2">
-                        <img src="./img-html/pu_suede.JPG" alt="zapatillas Puma" width="250 px;">
-                        <p>$00000</p>
-                        <input type="submit" value="COMPRAR"></input>
-                    </li>
-                </ul>
-            </nav>
+        <section class="pumaPag2">
+            <ul>
+                <li class="pumaListado2">
+                    <img src="./img-html/pu_caprosafari.JPG" alt="zapatillas Puma" width="250 px;">
+                    <p><b>$38999</b></p>
+                    <input type="submit" value="COMPRAR"></input>
+                </li>
+            </ul>
+            <ul>
+                <li class="pumaListado2">
+                    <img src="./img-html/pu_riderfvmulti.JPG" alt="zapatillas Puma" width="250 px;">
+                    <p><b>$31999</b></p>
+                    <input type="submit" value="COMPRAR"></input>
+                </li>
+            </ul>
+            <ul>
+                <li class="pumaListado2">
+                    <img src="./img-html/pu_suedered.JPG" alt="zapatillas Puma" width="250 px;">
+                    <p><b>$32999</b></p>
+                    <input type="submit" value="COMPRAR"></input>
+                </li>
+            </ul>
+            <ul>
+                <li class="pumaListado2">
+                    <img src="./img-html/pu_slipstreamwhitered.JPG" alt="zapatillas Puma" width="250 px;">
+                    <p><b>$45999</b></p>
+                    <input type="submit" value="COMPRAR"></input>
+                </li>
+            </ul>
         </section> 
     
-        <section class="pumaPag">
-            <nav>
-                <ul>
-                    <li class="pumaListado3">
-                        <img src="./img-html/pu_suede.JPG" alt="zapatillas Puma" width="250 px;">
-                        <p>$00000</p>
-                        <input type="submit" value="COMPRAR"></input>
-                    </li>
-                </ul>
-            </nav>
-            <nav>
-                <ul>
-                    <li class="pumaListado3">
-                        <img src="./img-html/pu_suede.JPG" alt="zapatillas Puma" width="250 px;">
-                        <p>$00000</p>
-                        <input type="submit" value="COMPRAR"></input>
-                    </li>
-                </ul>
-            </nav>
-            <nav>
-                <ul>
-                    <li class="pumaListado3">
-                        <img src="./img-html/pu_suede.JPG" alt="zapatillas Puma" width="250 px;">
-                        <p>$00000</p>
-                        <input type="submit" value="COMPRAR"></input>
-                    </li>
-                </ul>
-            </nav>
-            <nav>
-                <ul>
-                    <li class="pumaListado3">
-                        <img src="./img-html/pu_suede.JPG" alt="zapatillas Puma" width="250 px;">
-                        <p>$00000</p>
-                        <input type="submit" value="COMPRAR"></input>
-                    </li>
-                </ul>
-            </nav>
+        <section class="pumaPag3">
+            <ul>
+                <li class="pumaListado3">
+                    <img src="./img-html/pu_suedegreenblack.JPG" alt="zapatillas Puma" width="250 px;">
+                    <p><b>$39999</b></p>
+                    <input type="submit" value="COMPRAR"></input>
+                </li>
+            </ul>
+            <ul>
+                <li class="pumaListado3">
+                    <img src="./img-html/pu_slipstreamwbJPG.JPG" alt="zapatillas Puma" width="250 px;">
+                    <p><b>$45999</b></p>
+                    <input type="submit" value="COMPRAR"></input>
+                </li>
+            </ul>
+            <ul>
+                <li class="pumaListado3">
+                    <img src="./img-html/pu_riderfvgrey.JPG" alt="zapatillas Puma" width="250 px;">
+                    <p><b>$31999</b></p>
+                    <input type="submit" value="COMPRAR"></input>
+                </li>
+            </ul>
+            <ul>
+                <li class="pumaListado3">
+                    <img src="./img-html/pu_rsxwhite.JPG" alt="zapatillas Puma" width="250 px;">
+                    <p><b>$39999</b></p>
+                    <input type="submit" value="COMPRAR"></input>
+                </li>
+            </ul>
         </section> 
     
         <footer class="foot">
             <img src="./img-html/logo.jpg" alt="Logo" width="90px;">
             <p>&copy; 2023</p>
         </footer>
-
     </section>
 
     
