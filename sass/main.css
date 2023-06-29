@@ -1,0 +1,867 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#cuerpo {
+  background-color: whitesmoke;
+}
+
+#encabezado {
+  display: flex;
+  padding: 10px;
+  background-color: wheat;
+  justify-content: space-between;
+  flex-direction: column;
+}
+#encabezado .nombre h1 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 70px;
+  margin-left: 750px;
+}
+
+button.btn.btn-outline-success {
+  border: solid;
+  color: wheat;
+}
+
+#productos {
+  display: flex;
+  background-color: whitesmoke;
+  justify-content: center;
+  padding: 20px;
+}
+#productos .productosLanzamientos {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 45px;
+}
+
+.productosPróximos h2 {
+  display: flex;
+  background-color: whitesmoke;
+  justify-content: center;
+  padding: 20px;
+  margin-bottom: 0px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 45px;
+}
+
+#Nuevos {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  gap: 50px;
+  background-color: whitesmoke;
+}
+#Nuevos iframe {
+  width: 50%;
+  height: 450px;
+}
+#Nuevos p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  flex-direction: column;
+}
+
+div h3 {
+  display: flex;
+  justify-content: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 40px;
+  background-color: whitesmoke;
+  margin-bottom: 0px;
+}
+
+.productosDestacados {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  justify-items: center;
+  align-items: center;
+  background-color: whitesmoke;
+  height: 350px;
+  list-style: none;
+}
+.productosDestacados .adidas {
+  list-style: none;
+}
+.productosDestacados .adidas p {
+  justify-self: center;
+  align-self: center;
+}
+.productosDestacados .nike {
+  list-style: none;
+}
+.productosDestacados .nike p {
+  justify-self: center;
+  align-self: center;
+}
+.productosDestacados .puma {
+  list-style: none;
+}
+.productosDestacados .puma p {
+  justify-self: center;
+  align-self: center;
+}
+
+.productosOferta {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  justify-items: center;
+  align-items: center;
+  background-color: whitesmoke;
+  height: 350px;
+  list-style: none;
+}
+.productosOferta .adidas {
+  list-style: none;
+}
+.productosOferta .adidas p {
+  justify-self: center;
+  align-self: center;
+}
+.productosOferta .nike {
+  list-style: none;
+}
+.productosOferta .nike p {
+  justify-self: center;
+  align-self: center;
+}
+.productosOferta .puma {
+  list-style: none;
+}
+.productosOferta .puma p {
+  justify-self: center;
+  align-self: center;
+}
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding: 50px;
+}
+.newsletter h3 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+#pie {
+  display: flex;
+  background-color: wheat;
+  justify-content: space-around;
+  padding: 10px;
+  gap: 10px;
+  align-items: center;
+}
+#pie .pieLocales h4 {
+  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+#pie .redes h4 {
+  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+  #encabezado .nombre h1 {
+    margin-left: 0;
+    text-align: center;
+    font-size: 40px;
+  }
+  button.btn.btn-outline-success {
+    width: 100%;
+  }
+  #productos {
+    flex-wrap: wrap;
+  }
+  #productos .productosLanzamientos {
+    font-size: 30px;
+  }
+  .carousel {
+    display: block;
+  }
+  .productosPróximos h2 {
+    font-size: 30px;
+  }
+  #Nuevos iframe {
+    width: 100%;
+    height: auto;
+  }
+  #Nuevos p {
+    font-size: 16px;
+  }
+  div h3 {
+    font-size: 30px;
+  }
+  .productosDestacados {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    height: auto;
+    padding: 20px;
+  }
+  .productosOferta {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    height: auto;
+    padding: 20px;
+  }
+  .newsletter {
+    padding: 20px;
+  }
+  #pie {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+  #pie .pieLocales,
+  #pie .redes {
+    margin-bottom: 10px;
+  }
+}
+/* adidas.html */
+#layout {
+  display: grid;
+  background-color: whitesmoke;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  height: auto;
+  gap: 5px;
+}
+#layout .opciones {
+  background-color: whitesmoke;
+  grid-column: 1/2;
+  grid-row: auto;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-bottom: 14px;
+  margin-top: 14px;
+  padding: 25px;
+}
+#layout .género {
+  background-color: whitesmoke;
+  grid-column: 1/2;
+  grid-row: auto;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-bottom: 14px;
+  margin-top: -15px;
+  padding: 25px;
+}
+#layout .género ul {
+  list-style: none;
+  padding: 0px;
+}
+#layout .talles {
+  background-color: whitesmoke;
+  grid-column: 1/2;
+  grid-row: auto;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 25px;
+  margin-bottom: 14px;
+  margin-top: -40px;
+  padding: 25px;
+}
+#layout .talles .tabla {
+  background-color: whitesmoke;
+  list-style: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 17px;
+  padding: 0px;
+}
+#layout .colores {
+  background-color: whitesmoke;
+  grid-column: 1/2;
+  grid-row: auto;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-bottom: 14px;
+  margin-top: -40px;
+  padding: 25px;
+}
+#layout .colores .coloresTabla {
+  background-color: whitesmoke;
+  list-style: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 15px;
+  padding: 0px;
+}
+#layout .adidasPag {
+  background-color: whitesmoke;
+  grid-column: 2/3;
+  grid-row: 1/6;
+  padding: 15px;
+  margin: 21px;
+}
+#layout .adidasPag .adidasListado {
+  background-color: whitesmoke;
+  list-style: none;
+}
+#layout .adidasPag .adidasListado p {
+  margin-top: 20px;
+}
+#layout .adidasPag1 {
+  background-color: whitesmoke;
+  grid-column: 3/4;
+  grid-row: 1/6;
+  padding: 15px;
+  margin: 21px;
+}
+#layout .adidasPag1 .adidasListado1 {
+  background-color: whitesmoke;
+  list-style: none;
+}
+#layout .adidasPag1 .adidasListado1 p {
+  margin-top: 20px;
+}
+#layout .adidasPag2 {
+  background-color: whitesmoke;
+  grid-column: 4/5;
+  grid-row: 1/6;
+  padding: 15px;
+  margin: 21px;
+}
+#layout .adidasPag2 .adidasListado2 {
+  background-color: whitesmoke;
+  list-style: none;
+}
+#layout .adidasPag2 .adidasListado2 p {
+  margin-top: 20px;
+}
+#layout .adidasPag3 {
+  background-color: whitesmoke;
+  grid-column: 5/6;
+  grid-row: 1/6;
+  padding: 15px;
+  margin: 21px;
+}
+#layout .adidasPag3 .adidasListado3 {
+  background-color: whitesmoke;
+  list-style: none;
+}
+#layout .adidasPag3 .adidasListado3 p {
+  margin-top: 20px;
+}
+
+.foot {
+  display: grid;
+  grid-column: 6/1;
+  grid-row: auto;
+  background-color: wheat;
+  justify-content: end;
+  padding: 15px;
+  gap: 10px;
+  grid-area: footer;
+}
+
+@media only screen and (max-width: 600px) {
+  #layout {
+    grid-template-columns: 1fr;
+  }
+  #layout .opciones,
+  #layout .género,
+  #layout .talles,
+  #layout .colores {
+    grid-column: 1;
+  }
+  #layout .adidasPag,
+  #layout .adidasPag1,
+  #layout .adidasPag2,
+  #layout .adidasPag3 {
+    grid-column: 1;
+    grid-row: auto;
+    margin: 10px;
+  }
+  .foot {
+    grid-column: auto;
+    justify-content: center;
+  }
+}
+/* nike.html */
+#layoutNike {
+  display: grid;
+  background-color: whitesmoke;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  height: auto;
+  gap: 5px;
+}
+#layoutNike .opciones {
+  background-color: whitesmoke;
+  grid-column: 1/2;
+  grid-row: auto;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-bottom: 14px;
+  margin-top: 14px;
+  padding: 25px;
+}
+#layoutNike .género {
+  background-color: whitesmoke;
+  grid-column: 1/2;
+  grid-row: auto;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-bottom: 14px;
+  margin-top: -15px;
+  padding: 25px;
+}
+#layoutNike .género ul {
+  list-style: none;
+  padding: 0px;
+}
+#layoutNike .talles {
+  background-color: whitesmoke;
+  grid-column: 1/2;
+  grid-row: auto;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 25px;
+  margin-bottom: 14px;
+  margin-top: -40px;
+  padding: 25px;
+}
+#layoutNike .talles .tabla {
+  background-color: whitesmoke;
+  list-style: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 17px;
+  padding: 0px;
+}
+#layoutNike .colores {
+  background-color: whitesmoke;
+  grid-column: 1/2;
+  grid-row: auto;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-bottom: 14px;
+  margin-top: -40px;
+  padding: 25px;
+}
+#layoutNike .colores .coloresTabla {
+  background-color: whitesmoke;
+  list-style: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 15px;
+  padding: 0px;
+}
+#layoutNike .nikePag {
+  background-color: whitesmoke;
+  grid-column: 2/3;
+  grid-row: 1/6;
+  padding: 15px;
+  margin: 21px;
+}
+#layoutNike .nikePag .nikeListado {
+  background-color: whitesmoke;
+  list-style: none;
+}
+#layoutNike .nikePag .nikeListado p {
+  margin-top: 20px;
+}
+#layoutNike .nikePag1 {
+  background-color: whitesmoke;
+  grid-column: 3/4;
+  grid-row: 1/6;
+  padding: 15px;
+  margin: 21px;
+}
+#layoutNike .nikePag1 .nikeListado1 {
+  background-color: whitesmoke;
+  list-style: none;
+}
+#layoutNike .nikePag1 .nikeListado1 p {
+  margin-top: 20px;
+}
+#layoutNike .nikePag2 {
+  background-color: whitesmoke;
+  grid-column: 4/5;
+  grid-row: 1/6;
+  padding: 15px;
+  margin: 21px;
+}
+#layoutNike .nikePag2 .nikeListado2 {
+  background-color: whitesmoke;
+  list-style: none;
+}
+#layoutNike .nikePag2 .nikeListado2 p {
+  margin-top: 20px;
+}
+#layoutNike .nikePag3 {
+  background-color: whitesmoke;
+  grid-column: 5/6;
+  grid-row: 1/6;
+  padding: 15px;
+  margin: 21px;
+}
+#layoutNike .nikePag3 .nikeListado3 {
+  background-color: whitesmoke;
+  list-style: none;
+}
+#layoutNike .nikePag3 .nikeListado3 p {
+  margin-top: 20px;
+}
+
+.foot {
+  display: grid;
+  grid-column: 6/1;
+  grid-row: auto;
+  background-color: wheat;
+  justify-content: end;
+  padding: 15px;
+  gap: 10px;
+  grid-area: footer;
+}
+
+@media only screen and (max-width: 600px) {
+  #layoutNike {
+    grid-template-columns: 1fr;
+  }
+  #layoutNike .opciones,
+  #layoutNike .género,
+  #layoutNike .talles,
+  #layoutNike .colores {
+    grid-column: 1;
+  }
+  #layoutNike .nikePag,
+  #layoutNike .nikePag1,
+  #layoutNike .nikePag2,
+  #layoutNike .nikePag3 {
+    grid-column: 1;
+    grid-row: auto;
+    margin: 10px;
+  }
+  .foot {
+    grid-column: auto;
+    justify-content: center;
+  }
+}
+/* puma.html */
+#layoutPuma {
+  display: grid;
+  background-color: whitesmoke;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  height: auto;
+  gap: 5px;
+}
+#layoutPuma .opciones {
+  background-color: whitesmoke;
+  grid-column: 1/2;
+  grid-row: auto;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-bottom: 14px;
+  margin-top: 14px;
+  padding: 25px;
+}
+#layoutPuma .género {
+  background-color: whitesmoke;
+  grid-column: 1/2;
+  grid-row: auto;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-bottom: 14px;
+  margin-top: -15px;
+  padding: 25px;
+}
+#layoutPuma .género ul {
+  list-style: none;
+  padding: 0px;
+}
+#layoutPuma .talles {
+  background-color: whitesmoke;
+  grid-column: 1/2;
+  grid-row: auto;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 25px;
+  margin-bottom: 14px;
+  margin-top: -40px;
+  padding: 25px;
+}
+#layoutPuma .talles .tabla {
+  background-color: whitesmoke;
+  list-style: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 17px;
+  padding: 0px;
+}
+#layoutPuma .colores {
+  background-color: whitesmoke;
+  grid-column: 1/2;
+  grid-row: auto;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-bottom: 14px;
+  margin-top: -40px;
+  padding: 25px;
+}
+#layoutPuma .colores .coloresTabla {
+  background-color: whitesmoke;
+  list-style: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 15px;
+  padding: 0px;
+}
+#layoutPuma .pumaPag {
+  background-color: whitesmoke;
+  grid-column: 2/3;
+  grid-row: 1/6;
+  padding: 15px;
+  margin: 21px;
+}
+#layoutPuma .pumaPag .pumaListado {
+  background-color: whitesmoke;
+  list-style: none;
+}
+#layoutPuma .pumaPag .pumaListado p {
+  margin-top: 20px;
+}
+#layoutPuma .pumaPag1 {
+  background-color: whitesmoke;
+  grid-column: 3/4;
+  grid-row: 1/6;
+  padding: 15px;
+  margin: 21px;
+}
+#layoutPuma .pumaPag1 .pumaListado1 {
+  background-color: whitesmoke;
+  list-style: none;
+}
+#layoutPuma .pumaPag1 .pumaListado1 p {
+  margin-top: 20px;
+}
+#layoutPuma .pumaPag2 {
+  background-color: whitesmoke;
+  grid-column: 4/5;
+  grid-row: 1/6;
+  padding: 15px;
+  margin: 21px;
+}
+#layoutPuma .pumaPag2 .pumaListado2 {
+  background-color: whitesmoke;
+  list-style: none;
+}
+#layoutPuma .pumaPag2 .pumaListado2 p {
+  margin-top: 20px;
+}
+#layoutPuma .pumaPag3 {
+  background-color: whitesmoke;
+  grid-column: 5/6;
+  grid-row: 1/6;
+  padding: 15px;
+  margin: 21px;
+}
+#layoutPuma .pumaPag3 .pumaListado3 {
+  background-color: whitesmoke;
+  list-style: none;
+}
+#layoutPuma .pumaPag3 .pumaListado3 p {
+  margin-top: 20px;
+}
+
+.foot {
+  display: grid;
+  grid-column: 6/1;
+  grid-row: auto;
+  background-color: wheat;
+  justify-content: end;
+  padding: 15px;
+  gap: 10px;
+  grid-area: footer;
+}
+
+@media only screen and (max-width: 600px) {
+  #layoutPuma {
+    grid-template-columns: 1fr;
+  }
+  #layoutPuma .opciones,
+  #layoutPuma .género,
+  #layoutPuma .talles,
+  #layoutPuma .colores {
+    grid-column: 1;
+  }
+  #layoutPuma .pumaPag,
+  #layoutPuma .pumaPag1,
+  #layoutPuma .pumaPag2,
+  #layoutPuma .pumaPag3 {
+    grid-column: 1;
+    grid-row: auto;
+    margin: 10px;
+  }
+  .foot {
+    grid-column: auto;
+    justify-content: center;
+  }
+}
+/* contacto.html */
+.historia {
+  display: grid;
+  background-color: whitesmoke;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  margin: auto;
+  justify-content: start;
+  justify-items: start;
+}
+.historia .compañía {
+  background-color: whitesmoke;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.historia .compañíaHistoria {
+  background-color: whitesmoke;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.historia p {
+  background-color: whitesmoke;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.historia img {
+  background-color: whitesmoke;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  width: 500px;
+  max-width: 100%;
+  height: auto;
+}
+
+.contacto {
+  display: grid;
+  background-color: whitesmoke;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  margin: auto;
+  justify-content: center;
+  justify-items: center;
+  list-style: none;
+}
+.contacto .compañíaContacto {
+  margin-top: 50px;
+}
+.contacto .texto p {
+  background-color: whitesmoke;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-left: 100px;
+  margin-top: 40px;
+}
+.contacto .texto a {
+  background-color: whitesmoke;
+  margin-left: 100px;
+  margin-top: 40px;
+}
+.contacto .texto img {
+  background-color: whitesmoke;
+  margin-left: 500px;
+  margin-top: -223px;
+}
+
+.form {
+  background-color: whitesmoke;
+  padding: 25px;
+}
+.form .formTexto {
+  background-color: whitesmoke;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 30px;
+}
+.form .formulario li {
+  background-color: whitesmoke;
+  list-style: none;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  align-items: stretch;
+  justify-items: center;
+  background-color: whitesmoke;
+}
+.info .ayuda {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  background-color: whitesmoke;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 50px;
+}
+.info .ayudaTexto {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  background-color: whitesmoke;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.info .locales {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  background-color: whitesmoke;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 50px;
+}
+
+.locales .mapa {
+  background-color: whitesmoke;
+  grid-column: 1/2;
+  grid-row: 4/5;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.foot {
+  display: grid;
+  grid-column: 1/7;
+  grid-row: auto;
+  background-color: wheat;
+  justify-content: end;
+  padding: 15px;
+  gap: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .historia {
+    font-size: 16px;
+  }
+  .historia .compañía,
+  .historia .compañíaHistoria,
+  .historia p,
+  .historia img {
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+  .historia img {
+    margin-left: 0px;
+    margin-top: 5px;
+  }
+  .contacto {
+    font-size: 16px;
+  }
+  .contacto .compañíaContacto {
+    margin-top: 30px;
+  }
+  .contacto .texto p,
+  .contacto .texto a,
+  .contacto .texto img {
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+  .contacto .texto img {
+    margin-left: 35px;
+    margin-top: 5px;
+  }
+  .form {
+    padding: 15px;
+  }
+  .form .formTexto {
+    font-size: 20px;
+  }
+  .info .ayuda,
+  .info .ayudaTexto,
+  .info .locales,
+  .locales .mapa {
+    margin: 10px;
+  }
+  .foot {
+    grid-column: 1;
+    grid-row: auto;
+  }
+}/*# sourceMappingURL=main.css.map */
