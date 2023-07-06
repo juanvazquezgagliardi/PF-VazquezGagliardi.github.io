@@ -20,8 +20,18 @@
     margin-left: 750px;
 }
 
-button.btn.btn-outline-success{
+button.navbar-toggler {
+    color: wheat;
+}
+
+button.btn.btn-outline-success {
     border: solid;
+    color: wheat;
+    --bs-btn-hover-bg: whitesmoke;
+    --bs-btn-active-bg: whitesmoke;
+    --bs-btn-active-border-color: wheat;
+}
+button.btn-outline-success :hover {
     color: wheat;
 }
 
@@ -71,6 +81,10 @@ button.btn.btn-outline-success{
     font-size: 20px;
     flex-direction: column;
 }
+#Nuevos input {
+    padding: revert;
+    border-color: whitesmoke;
+}
 
 div h3 {
     display: flex;
@@ -78,7 +92,8 @@ div h3 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 40px;
     background-color: whitesmoke;
-    margin-bottom: 0px;
+    margin-bottom: 25px;
+    margin-top: 25px;
 }
 
 .productosDestacados {
@@ -91,12 +106,19 @@ div h3 {
     height: 350px;
     list-style: none;
 }
+.productosDestacados input {
+    padding: revert;
+    background-color: wheat;
+    border-color: whitesmoke;
+}
 .productosDestacados .adidas {
     list-style: none;
 }
 .productosDestacados .adidas p {
     justify-self: center;
     align-self: center;
+    font-size: 20px;
+    margin-top: 20px;
 }
 .productosDestacados .nike {
     list-style: none;
@@ -104,6 +126,8 @@ div h3 {
 .productosDestacados .nike p {
     justify-self: center;
     align-self: center;
+    font-size: 20px;
+    margin-top: 20px;
 }
 .productosDestacados .puma {
     list-style: none;
@@ -111,6 +135,8 @@ div h3 {
 .productosDestacados .puma p {
     justify-self: center;
     align-self: center;
+    font-size: 20px;
+    margin-top: 20px;
 }
 
 .productosOferta {
@@ -123,12 +149,19 @@ div h3 {
     height: 350px;
     list-style: none;
 }
+.productosOferta input {
+    padding: revert;
+    background-color: wheat;
+    border-color: whitesmoke;
+}
 .productosOferta .adidas {
     list-style: none;
 }
 .productosOferta .adidas p {
     justify-self: center;
     align-self: center;
+    font-size: 20px;
+    margin-top: 20px;
 }
 .productosOferta .nike {
     list-style: none;
@@ -136,6 +169,8 @@ div h3 {
 .productosOferta .nike p {
     justify-self: center;
     align-self: center;
+    font-size: 20px;
+    margin-top: 20px;
 }
 .productosOferta .puma {
     list-style: none;
@@ -143,6 +178,8 @@ div h3 {
 .productosOferta .puma p {
     justify-self: center;
     align-self: center;
+    font-size: 20px;
+    margin-top: 20px;
 }
 
 .newsletter {
@@ -162,7 +199,7 @@ div h3 {
 #pie {
     display: flex;
     background-color: wheat;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 10px;
     gap: 10px;
     align-items: center;
@@ -270,6 +307,9 @@ div h3 {
     list-style: none;
     padding: 0px;
 }
+#layout .género input {
+    accent-color: wheat;
+}
 #layout .talles {
     background-color: whitesmoke;
     grid-column: 1/2;
@@ -287,6 +327,9 @@ div h3 {
     font-size: 17px;
     padding: 0px;
 }
+#layout .talles input {
+    accent-color: wheat;
+}
 #layout .colores {
     background-color: whitesmoke;
     grid-column: 1/2;
@@ -303,6 +346,9 @@ div h3 {
     font-size: 15px;
     padding: 0px;
 }
+#layout .colores input {
+    accent-color: wheat;
+}
 #layout .adidasPag {
     background-color: whitesmoke;
     grid-column: 2/3;
@@ -316,6 +362,12 @@ div h3 {
 }
 #layout .adidasPag .adidasListado p {
     margin-top: 20px;
+    font-size: 20px;
+}
+#layout .adidasPag .adidasListado input {
+    padding: revert;
+    background-color: wheat;
+    border-color: whitesmoke;
 }
 #layout .adidasPag1 {
     background-color: whitesmoke;
@@ -330,6 +382,12 @@ div h3 {
 }
 #layout .adidasPag1 .adidasListado1 p {
     margin-top: 20px;
+    font-size: 20px;
+}
+#layout .adidasPag1 .adidasListado1 input {
+    padding: revert;
+    background-color: wheat;
+    border-color: whitesmoke;
 }
 #layout .adidasPag2 {
     background-color: whitesmoke;
@@ -343,7 +401,13 @@ div h3 {
     list-style: none;    
 }
 #layout .adidasPag2 .adidasListado2 p {
-    margin-top: 20px;   
+    margin-top: 20px; 
+    font-size: 20px;  
+}
+#layout .adidasPag2 .adidasListado2 input {
+    padding: revert;
+    background-color: wheat;
+    border-color: whitesmoke;
 }
 #layout .adidasPag3 {
     background-color: whitesmoke;
@@ -357,7 +421,13 @@ div h3 {
     list-style: none;
 }
 #layout .adidasPag3 .adidasListado3 p {
-    margin-top: 20px;   
+    margin-top: 20px;
+    font-size: 20px;   
+}
+#layout .adidasPag3 .adidasListado3 input {
+    padding: revert;
+    background-color: wheat;
+    border-color: whitesmoke;
 }
 
 .foot {
@@ -429,6 +499,9 @@ div h3 {
     list-style: none;
     padding: 0px;
 }
+#layoutNike .género input {
+    accent-color: wheat;
+}
 #layoutNike .talles {
     background-color: whitesmoke;
     grid-column: 1/2;
@@ -446,6 +519,9 @@ div h3 {
     font-size: 17px;
     padding: 0px;
 }
+#layoutNike .talles input {
+    accent-color: wheat;
+}
 #layoutNike .colores {
     background-color: whitesmoke;
     grid-column: 1/2;
@@ -462,6 +538,9 @@ div h3 {
     font-size: 15px;
     padding: 0px;
 }
+#layoutNike .colores input {
+    accent-color: wheat;
+}
 #layoutNike .nikePag {
     background-color: whitesmoke;
     grid-column: 2/3;
@@ -475,6 +554,12 @@ div h3 {
 }
 #layoutNike .nikePag .nikeListado p {
     margin-top: 20px;
+    font-size: 20px;
+}
+#layoutNike .nikePag .nikeListado input {
+    padding: revert;
+    background-color: wheat;
+    border-color: whitesmoke;
 }
 #layoutNike .nikePag1 {
     background-color: whitesmoke;
@@ -489,6 +574,12 @@ div h3 {
 }
 #layoutNike .nikePag1 .nikeListado1 p {
     margin-top: 20px;
+    font-size: 20px;
+}
+#layoutNike .nikePag1 .nikeListado1 input {
+    padding: revert;
+    background-color: wheat;
+    border-color: whitesmoke;
 }
 #layoutNike .nikePag2 {
     background-color: whitesmoke;
@@ -503,6 +594,12 @@ div h3 {
 }
 #layoutNike .nikePag2 .nikeListado2 p {
     margin-top: 20px;
+    font-size: 20px;
+}
+#layoutNike .nikePag2 .nikeListado2 input {
+    padding: revert;
+    background-color: wheat;
+    border-color: whitesmoke;
 }
 #layoutNike .nikePag3 {
     background-color: whitesmoke;
@@ -517,6 +614,12 @@ div h3 {
 }
 #layoutNike .nikePag3 .nikeListado3 p {
     margin-top: 20px;
+    font-size: 20px;
+}
+#layoutNike .nikePag3 .nikeListado3 input {
+    padding: revert;
+    background-color: wheat;
+    border-color: whitesmoke;
 }
 
 .foot {
@@ -587,6 +690,9 @@ div h3 {
     list-style: none;
     padding: 0px;
 }
+#layoutPuma .género input {
+    accent-color: wheat;
+}
 #layoutPuma .talles {
     background-color: whitesmoke;
     grid-column: 1/2;
@@ -604,6 +710,9 @@ div h3 {
     font-size: 17px;
     padding: 0px;
 }
+#layoutPuma .talles input {
+    accent-color: wheat;
+}
 #layoutPuma .colores {
     background-color: whitesmoke;
     grid-column: 1/2;
@@ -620,6 +729,9 @@ div h3 {
     font-size: 15px;
     padding: 0px;
 }
+#layoutPuma .colores input {
+    accent-color: wheat;
+}
 #layoutPuma .pumaPag {
     background-color: whitesmoke;
     grid-column: 2/3;
@@ -633,6 +745,12 @@ div h3 {
 }
 #layoutPuma .pumaPag .pumaListado p {
     margin-top: 20px;
+    font-size: 20px;
+}
+#layoutPuma .pumaPag .pumaListado input {
+    padding: revert;
+    background-color: wheat;
+    border-color: whitesmoke;
 }
 #layoutPuma .pumaPag1 {
     background-color: whitesmoke;
@@ -647,6 +765,12 @@ div h3 {
 }
 #layoutPuma .pumaPag1 .pumaListado1 p {
     margin-top: 20px;
+    font-size: 20px;
+}
+#layoutPuma .pumaPag1 .pumaListado1 input {
+    padding: revert;
+    background-color: wheat;
+    border-color: whitesmoke;
 }
 #layoutPuma .pumaPag2 {
     background-color: whitesmoke;
@@ -661,6 +785,12 @@ div h3 {
 }
 #layoutPuma .pumaPag2 .pumaListado2 p {
     margin-top: 20px;
+    font-size: 20px;
+}
+#layoutPuma .pumaPag2 .pumaListado2 input {
+    padding: revert;
+    background-color: wheat;
+    border-color: whitesmoke;
 }
 #layoutPuma .pumaPag3 {
     background-color: whitesmoke;
@@ -675,6 +805,12 @@ div h3 {
 }
 #layoutPuma .pumaPag3 .pumaListado3 p {
     margin-top: 20px;
+    font-size: 20px;
+}
+#layoutPuma .pumaPag3 .pumaListado3 input {
+    padding: revert;
+    background-color: wheat;
+    border-color: whitesmoke;
 }
 
 .foot {
